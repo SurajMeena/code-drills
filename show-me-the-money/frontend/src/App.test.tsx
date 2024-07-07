@@ -3,7 +3,6 @@ import { render, screen, waitFor } from "@testing-library/react";
 import React from "react";
 import App from "./App";
 
-// Mock the fetch function
 global.fetch = jest.fn();
 
 const mockBalanceSheetData = {
