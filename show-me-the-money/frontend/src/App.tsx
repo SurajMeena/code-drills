@@ -12,7 +12,7 @@ const App: React.FC = () => {
     useEffect(() => {
         const fetchBalanceSheet = async () => {
             try {
-                const response = await fetch(baseUrl + "balance-sheet");
+                const response = await fetch(baseUrl + "/balance-sheet");
                 if (!response.ok) {
                     throw new Error("Failed to fetch balance sheet");
                 }

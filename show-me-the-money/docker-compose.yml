@@ -1,0 +1,26 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - XERO_API_URL=http://xero-mock:3000
+    depends_on:
+      - xero-mock
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  xero-mock:
+    image: jaypeng2015/show-me-the-money
+    ports:
+      - "3000:3000"
