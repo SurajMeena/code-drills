@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local development environment
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories
+.venv/
+venv/
+env/
+lib/
+bin/
+
+# Compiled Python files
+*.pyc
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+
+# Database files
+*.db
+
+# Cache files
+*.cache
+
+# Environment variables
+.env
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Miscellaneous
+.DS_Store
